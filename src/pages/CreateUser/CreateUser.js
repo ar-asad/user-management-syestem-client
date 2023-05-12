@@ -50,7 +50,10 @@ const CreateUser = () => {
     }
     return (
         <div className='w-96 mx-auto mt-10'>
-            <Link to='/'> see all user</Link>
+            <div className='my-4 shadow-md inline-block ms-4 p-2 text-violet-700 font-semibold'>
+                <Link to='/'> see all user</Link>
+
+            </div>
             <form onSubmit={handleCreateUser} className='grid grid-cols-1 gap-2 mt-4 py-5'>
                 <input type="text" name='name' className="input input-bordered w-full max-w-md" placeholder='Your Name' />
                 <input type="name" name='email' className="input input-bordered w-full max-w-md" placeholder='Your Email' />
